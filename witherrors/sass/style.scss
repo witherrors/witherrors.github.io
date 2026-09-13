@@ -71,7 +71,7 @@ body::before {
   font-family: "VT323", monospace;
   letter-spacing: 0.02em;
   color: $text;
-  animation: glitch-flicker 6s infinite;
+  animation: glitch-flicker 10s infinite;
 
   &::before,
   &::after {
