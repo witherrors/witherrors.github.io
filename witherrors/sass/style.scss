@@ -1,13 +1,133 @@
-body {
-  font-family: sans-serif;
-  margin: 0;
-  background-color: #1a1a1a;
-  color: #e0e0e0;
+// ---------------------------------------------
+// Fonts
+// ---------------------------------------------
+// Fira Code as the readable base (self-host or swap for a Google Fonts @import
+// if you'd rather not bundle the font files yourself).
+// VT323 is used sparingly for glitch/display moments only.
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("/fonts/FiraCode-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
 }
 
+@font-face {
+  font-family: "VT323";
+  src: url("/fonts/VT323-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+// ---------------------------------------------
+// Palette
+// ---------------------------------------------
+
+$bg: #0d0d0f;
+$text: #d4d4d4;
+$text-dim: #8a8a8a;
+$border: #2a2a2e;
+$glitch-magenta: #ff2079;
+$glitch-cyan: #00fff2;
+
+// ---------------------------------------------
+// Base
+// ---------------------------------------------
+
+body {
+  font-family: "Fira Code", monospace;
+  margin: 0;
+  background-color: $bg;
+  color: $text;
+  position: relative;
+}
+
+// Subtle scanline overlay across the whole page.
+// Kept very low-opacity and non-interactive so it never hurts readability.
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.12),
+    rgba(0, 0, 0, 0.12) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  z-index: 9999;
+}
+
+// ---------------------------------------------
+// Glitch heading utility
+// ---------------------------------------------
+// Usage: <h1 class="glitch" data-text="Your Heading">Your Heading</h1>
+// The data-text attribute must match the visible text exactly.
+
+.glitch {
+  position: relative;
+  display: inline-block;
+  font-family: "VT323", monospace;
+  letter-spacing: 0.02em;
+  color: $text;
+  animation: glitch-flicker 6s infinite;
+
+  &::before,
+  &::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &::before {
+    color: $glitch-magenta;
+    transform: translate(-2px, 1px);
+    clip-path: inset(0 0 55% 0);
+  }
+
+  &::after {
+    color: $glitch-cyan;
+    transform: translate(2px, -1px);
+    clip-path: inset(55% 0 0 0);
+  }
+}
+
+@keyframes glitch-flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 1;
+  }
+  93% {
+    opacity: 0.4;
+    transform: translateX(-2px);
+  }
+  94% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  96% {
+    opacity: 0.6;
+    transform: translateX(2px);
+  }
+  97% {
+    opacity: 1;
+  }
+}
+
+// ---------------------------------------------
+// Nav
+// ---------------------------------------------
+
 .nav {
-  background-color: #242424;
-  border-bottom: 1px solid #333;
+  background-color: #141416;
+  border-bottom: 1px solid $border;
 
   .container {
     display: flex;
@@ -16,7 +136,7 @@ body {
   }
 
   a {
-    color: #e0e0e0;
+    color: $text;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.15s ease;
@@ -24,15 +144,23 @@ body {
     &:hover {
       color: #ffffff;
       text-decoration: underline;
+      text-decoration-style: wavy; // a small "signal error" touch on hover
+      text-decoration-color: $glitch-magenta;
     }
 
     &.active {
       color: #ffffff;
-      border-bottom: 2px solid #ffffff;
+      // jagged / irregular underline instead of a clean solid line
+      border-bottom: 2px dashed $glitch-cyan;
       padding-bottom: 2px;
+      animation: glitch-flicker 8s infinite;
     }
   }
 }
+
+// ---------------------------------------------
+// Layout
+// ---------------------------------------------
 
 .section {
   padding: 2rem 0;
@@ -42,4 +170,40 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+// ---------------------------------------------
+// Code / pre blocks
+// ---------------------------------------------
+// Tighter line-height here (not on body text) for that dense
+// terminal-output look, without hurting paragraph readability.
+
+pre,
+code {
+  font-family: "Fira Code", monospace;
+  line-height: 1.2;
+  background-color: #141416;
+  border: 1px solid $border;
+}
+
+pre {
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+code {
+  padding: 0.1rem 0.3rem;
+}
+
+// ---------------------------------------------
+// Body text (paragraphs) — stays clean and legible
+// ---------------------------------------------
+
+p {
+  line-height: 1.6;
+  color: $text;
+}
+
+a {
+  color: $glitch-cyan;
 }
