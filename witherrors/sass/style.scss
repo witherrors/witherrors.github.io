@@ -207,3 +207,25 @@ p {
 a {
   color: $glitch-cyan;
 }
+
+//ABOUT ME SECTION
+
+.about-flex {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start; // top-align image and text instead of vertically centering
+  flex-wrap: wrap; // stacks on narrow/mobile screens instead of squishing
+}
+
+.about-photo {
+  max-width: 300px;
+  height: auto;
+  flex-shrink: 0; // keeps the image from shrinking if text is long
+  filter: grayscale(20%) contrast(1.1); // optional, ties it to your palette
+  border: 1px solid $border;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px; // prevents text column from getting too narrow before wrapping
+}
