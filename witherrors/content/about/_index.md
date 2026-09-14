@@ -15,8 +15,8 @@ template = "about.html"
       <li>breaking things faster than I can fix</li>
       <li>i've lost something along the way </li>
       <li>burning oil looking for it</li>
-      <li>words, words, words</li>
-      <li>holy fuck I just want to line up with the picture</li>
+      <li>i dont know shit about fuck</li>
+      <li>i'm into dungeon crawler carl right now</li>
     </ul>
   </div>
 </div>
