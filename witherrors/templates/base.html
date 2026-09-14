@@ -11,9 +11,9 @@
 <body>
   <nav class="nav">
     <div class="container">
-      <a href="{{ get_url(path='/') }}" class="{% if current_path == '/' %}active{% endif %}">Home</a>
-      <a href="{{ get_url(path='about') }}" class="{% if current_path == '/about/' %}active{% endif %}">About Me</a>
-      <a href="{{ get_url(path='posts') }}" class="{% if current_path is starting_with(pat='/posts/') %}active{% endif %}">Posts</a>
+      <a href="{{ get_url(path='/') }}" class="{% if current_path == '/' %}active{% endif %}">home</a>
+      <a href="{{ get_url(path='about') }}" class="{% if current_path == '/about/' %}active{% endif %}">about</a>
+      <a href="{{ get_url(path='posts') }}" class="{% if current_path is starting_with(pat='/posts/') %}active{% endif %}">posts</a>
     </div>
   </nav>
 
