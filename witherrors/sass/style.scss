@@ -229,3 +229,40 @@ a {
   flex: 1;
   min-width: 250px; // prevents text column from getting too narrow before wrapping
 }
+
+//BLOG Thumbnail
+
+.post-thumb {
+  width: 200px;      // adjust to taste
+  height: 120px;
+  object-fit: cover; // crops to fill the box without distorting aspect ratio
+  border-radius: 4px; // optional, matches a lot of minimal blog styles
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-item {
+  display: flex;
+  align-items: center;   // vertically centers image and title relative to each other
+  gap: 1rem;              // spacing between image and title
+  margin-bottom: 1rem;
+}
+
+.post-thumb-link {
+  display: block;
+  line-height: 0;          // removes extra whitespace under the image
+}
+
+.post-thumb {
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.post-title-link {
+  font-size: 1.2rem;
+}

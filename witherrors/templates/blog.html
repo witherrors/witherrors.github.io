@@ -4,11 +4,20 @@
 <h1 class="title">
   {{ section.title }}
 </h1>
-<ul>
-  <!-- If you are using pagination, section.pages will be empty.
-       You need to use the paginator object -->  
+<ul class="post-list">
   {% for page in section.pages %}
-  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+  <li class="post-item">
+    {% if page.extra.image %}
+    <a href="{{ page.permalink | safe }}" class="post-thumb-link">
+      {% for asset in page.assets %}
+        {% if asset is ending_with(pat=page.extra.image) %}
+        <img src="{{ get_url(path=asset, trailing_slash=false) }}" alt="" class="post-thumb">
+        {% endif %}
+      {% endfor %}
+    </a>
+    {% endif %}
+    <a href="{{ page.permalink | safe }}" class="post-title-link">{{ page.title }}</a>
+  </li>
   {% endfor %}
 </ul>
 {% endblock content %}
