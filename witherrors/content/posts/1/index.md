@@ -6,10 +6,10 @@ image = "wizard.jpeg"
 +++
 
 <head>
-  <meta property="og:title" content="How To Build A Grimoire in 2026">
-  <meta property="og:description" content="A guide to building a knowledge repository and publishing pipeline.">
-  <meta property="og:image" content="https://witherrors.org/posts/1/wizard.jpeg">
-  <meta property="og:url" content="https://witherrors.org/posts/1/">
+  <meta name="title" property="og:title" content="How To Build A Grimoire in 2026">
+  <meta name="description" property="og:description" content="A guide to building a knowledge repository and publishing pipeline.">
+  <meta name="image" property="og:image" content="https://witherrors.org/posts/1/wizard.jpeg">
+  <meta name ="url" property="og:url" content="https://witherrors.org/posts/1/">
 </head>
 
 # pongus pingus hingus DINGUS
