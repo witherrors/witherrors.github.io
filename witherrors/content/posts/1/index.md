@@ -4,6 +4,7 @@ date = 2026-09-16
 [extra]
 image = "wizard.jpeg"
 author = "witherrors"
+description = "A guide to building a knowledge repository and publishing pipeline."
 +++
 
 # pongus pingus hingus DINGUS
