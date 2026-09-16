@@ -4,7 +4,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>witherrors</title>
+  
+  <title>{% if page is defined and page.title %}{{ page.title }} | {% elif section is defined and section.title %}{{ section.title }} | {% endif %}witherrors</title>
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="{% if page is defined and page.title %}{{ page.title }}{% elif section is defined and section.title %}{{ section.title }}{% else %}witherrors{% endif %}">
+  
+  {% if page is defined and page %}
+    <meta property="og:description" content="{{ page.description | default(value='A technical blog and grimoire from witherrors.org') }}">
+    <meta property="og:url" content="{{ page.permalink }}">
+    {% if page.extra is defined and page.extra.image %}
+      <meta property="og:image" content="{{ page.permalink }}{{ page.extra.image }}">
+    {% endif %}
+  {% elif section is defined and section %}
+    <meta property="og:description" content="{{ section.description | default(value='A technical blog and grimoire from witherrors.org') }}">
+    <meta property="og:url" content="{{ section.permalink }}">
+  {% else %}
+    <meta property="og:description" content="A technical blog and grimoire from witherrors.org">
+    <meta property="og:url" content="{{ current_url }}">
+  {% endif %}
+
   <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
 </head>
 
