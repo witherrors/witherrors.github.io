@@ -5,10 +5,12 @@ date = 2026-09-16
 image = "wizard.jpeg"
 +++
 
-<meta property="og:title" content="How To Build A Grimoire in 2026">
-<meta property="og:description" content="A guide to building a knowledge repository and publishing pipeline.">
-<meta property="og:image" content="https://witherrors.org/posts/1/wizard.jpeg">
-<meta property="og:url" content="https://witherrors.org/posts/1/">
+<head>
+  <meta property="og:title" content="How To Build A Grimoire in 2026">
+  <meta property="og:description" content="A guide to building a knowledge repository and publishing pipeline.">
+  <meta property="og:image" content="https://witherrors.org/posts/1/wizard.jpeg">
+  <meta property="og:url" content="https://witherrors.org/posts/1/">
+</head>
 
 # pongus pingus hingus DINGUS
 
