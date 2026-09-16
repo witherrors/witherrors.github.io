@@ -5,13 +5,6 @@ date = 2026-09-16
 image = "wizard.jpeg"
 +++
 
-<head>
-  <meta name="title" property="og:title" content="How To Build A Grimoire in 2026">
-  <meta name="description" property="og:description" content="A guide to building a knowledge repository and publishing pipeline.">
-  <meta name="image" property="og:image" content="https://witherrors.org/posts/1/wizard.jpeg">
-  <meta name ="url" property="og:url" content="https://witherrors.org/posts/1/">
-</head>
-
 # pongus pingus hingus DINGUS
 
 If you're reading this, we have done it. We have built both our apprentice grimoire (in this case a basic spellbook bound in human flesh) and a cute little content publishing pipeline to the world wide web "fo free". 

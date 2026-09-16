@@ -15,7 +15,7 @@
     
     {% if page.extra.image %}
         {# This builds the absolute URL to your image based on your current page path #}
-        <meta property="og:image" content="{{ current_url | trim_end_matches(pat='/') }}/{{ page.extra.image }}">
+        <meta property="og:image" content="{{ get_url(path=page.extra.image, trailing_slash=false) }}">
     {% endif %}
     
     <meta property="og:url" content="{{ current_url }}">
