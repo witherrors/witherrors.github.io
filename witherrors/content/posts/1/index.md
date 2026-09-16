@@ -100,9 +100,18 @@ And what are we researching?
 
 <img src="skeletor.jpg" width="400">
 
+<br>
+<br>
+
 ---------------------------------------------------------------------------
 
-Tyler close us out:
+<br>
+
+I've been laying low, motionless, paralyzed by the changes in the industry. The greed. The avarice. What about my greed? What about my...
+<h1 class="glitch glitch--avarice-hero" data-text="AVARICE">AVARICE</h1>
+
+You'll know soon enough.
+Tyler's going to close us out:
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
