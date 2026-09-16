@@ -12,7 +12,7 @@ template = "about.html"
       <li>hasbeen hacker</li>
       <li>absurd sense of humour</li>
       <li>veteran</li>
-      <li>i'm into dungeon crawler carl right now</li>
+      <li>dcc has me hooked</li>
     </ul>
   </div>
 </div>

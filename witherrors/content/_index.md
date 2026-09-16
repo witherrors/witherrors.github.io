@@ -2,16 +2,13 @@
 template = "index.html"
 +++
 
-we are learning the following:
+<br>
 
-[+] rust\
-[+] linux systems programming\
-[+] how to transition from tool user to tool builder\
-[-] they cannot contain <span class="glitch" data-text="US">US</span>
+I've been laying low, motionless, paralyzed by the changes in the industry. The greed. The avarice. What about my greed? What about my
 
-please note:
+<h1 class="glitch glitch--avarice-hero" data-text="AVARICE.">AVARICE.</h1>
 
-[!] don't use any of this shit on somebody else's computer
+You'll know soon enough.
 
 
 

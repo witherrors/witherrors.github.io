@@ -7,17 +7,18 @@ image = "wizard.jpeg"
 author = "witherrors"
 +++
 
-# pongus pingus hingus DINGUS
+<h1 class="glitch" data-text="HOLY SHIT IT WORKED">HOLY SHIT IT WORKED</h1>
+
 
 If you're reading this, we have done it. We have built both our apprentice grimoire (in this case a basic spellbook bound in human flesh) and a cute little content publishing pipeline to the world wide web "fo free". 
 
-*edit:* ok mostly free, I did pay for a custom domain.
+Ok mostly free, I did pay for a custom domain.
 
-## <why?>
+## why?
 
 I want to build out a knowledge repository for upcoming projects and document my journey along the way.
 
-## <how?>
+## how?
 
 - Obsidian      - knowledge management, diagram creation, etc. our work horse
 - Vscodium      - or whatever text editor you want to. it truly doesn't matter
@@ -28,7 +29,7 @@ I want to build out a knowledge repository for upcoming projects and document my
 <img src="example_diag.png" width="800">
 <br>
 
-## <huh?>
+## huh?
 
 ### [obsidian](https://obsidian.md/)
 
@@ -71,11 +72,11 @@ Everytime I read the word "zola" I think of that terrifying giant green head fro
 
 <img src="zordon.jpg" width="800">
 
-This is a rust based [static site generator](https://en.wikipedia.org/wiki/Static_site_generator). I am using it because I've taken a dive into rust programming and figured why not? I am sure other options such as [Jeckyl](https://jekyllrb.com/), [Hugo](https://gohugo.io/), etc are great and I've lightly explored most, this one just keeps me all in on rust.
+Anywho this is a rust based [static site generator](https://en.wikipedia.org/wiki/Static_site_generator). I am using it because I've taken a dive into rust programming and figured why not? I am sure other options such as [Jeckyl](https://jekyllrb.com/), [Hugo](https://gohugo.io/), etc are great and I've lightly explored most, this one just keeps me all in on rust.
 
 It was also the first SSG where I didn't entertain trying to pick a theme and then customizing that theme. I've found the best approach is to just walk through the [documentation](https://www.getzola.org/documentation/getting-started/overview/) (shocker) and tinker to your hearts content. 
 
-The idea here is that you put in the upfront work of customizing your website with html templates and scss styling, and after that its just writing content in markdown format per post. Zola handles everything else for you. Because this is a static site, were not mucking with a web app, everything is minimal, and no real attack surface for "lookie lou's" to dig into.
+The idea here is that you put in the upfront work of customizing your website with html templates and scss styling, and after that its just writing content in markdown format per post. Zola handles everything else for you. Because this is a static site, were not mucking with a web app, everything is minimal, and no real attack surface for nerds to dig into.
 
 Some quick tips:
 
@@ -100,18 +101,20 @@ And what are we researching?
 
 <img src="skeletor.jpg" width="400">
 
-<br>
+...\
+....\
+.....
+
+Join me next post where we rip apart a [garbage reverse tcp shell I wrote in rust](https://github.com/witherrors/missyelliott) and see what we keep and what we slam dunk into the trashcan.
+
+
+
+
 <br>
 
 ---------------------------------------------------------------------------
 
 <br>
-
-I've been laying low, motionless, paralyzed by the changes in the industry. The greed. The avarice. What about my greed? What about my...
-
-<h1 class="glitch glitch--avarice-hero" data-text="AVARICE">AVARICE</h1>
-
-You'll know soon enough.
 
 Tyler's going to close us out:
 
