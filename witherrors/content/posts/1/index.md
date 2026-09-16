@@ -1,6 +1,6 @@
 +++
-title = "test"
-date = 2019-11-27
+title = "How To Build A Grimoire in 2026"
+date = 2026-09-17
 [extra]
 image = "wizard.jpeg"
 +++
@@ -9,11 +9,11 @@ image = "wizard.jpeg"
 
 If you're reading this, we have done it. We have built both our apprentice grimoire (in this case a basic spellbook bound in human flesh) and a cute little content publishing pipeline to the world wide web "fo free". 
 
-*edit:* ok mostly free
+*edit:* ok mostly free, I did pay for a custom domain.
 
 ## <why?>
 
-Listen I don't have to justify anything.
+I want to build out a knowledge repository for upcoming projects and document my journey along the way.
 
 ## <how?>
 
@@ -86,8 +86,6 @@ Some quick tips:
 Is it better than using something dedicated to blogging that is offered as a SaaS solution (like [medium](https://medium.com/))? No clue. It took me around a week (off-time) to figure out everything going on and tweak things in zola to land 
 at a "this is acceptable" point. I like the control, I love the price (free), and I think its the right approach for somebody trying to detangle from subscriptions.
 
-<h1 class="glitch" data-text="LETS KEEP IT MOVING DIPSHIT">LETS KEEP IT MOVING DIPSHIT</h1>
-
 ### [github pages](https://docs.github.com/en/pages)
 
 Were using github pages to host our static site content and a workflow that runs everytime I do a `git push` to the main branch. Zola has documentation for this [here](https://www.getzola.org/documentation/deployment/github-pages/). I don't want to get too crazy on this section because the options are limitless here. You can take a look at my workflow [here](https://github.com/witherrors/witherrors.github.io/blob/main/.github/workflows/deploy.yml), it is minimal and works for me. You do you boo boo.
@@ -108,9 +106,11 @@ And what are we researching?
 <br>
 
 I've been laying low, motionless, paralyzed by the changes in the industry. The greed. The avarice. What about my greed? What about my...
-<h1 class="glitch glitch--avarice-hero" data-text="AVARICE">AVARICE</h1>
+
+<span class="glitch glitch--avarice-hero" data-text="AVARICE">AVARICE</span>
 
 You'll know soon enough.
+
 Tyler's going to close us out:
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
