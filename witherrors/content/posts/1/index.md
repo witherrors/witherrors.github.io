@@ -1,10 +1,10 @@
 +++
 title = "How To Build A Grimoire in 2026"
 date = 2026-09-16
+description = "A guide to building a knowledge repository and publishing pipeline."
 [extra]
 image = "wizard.jpeg"
 author = "witherrors"
-description = "A guide to building a knowledge repository and publishing pipeline."
 +++
 
 # pongus pingus hingus DINGUS

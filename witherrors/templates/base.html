@@ -11,16 +11,17 @@
   <meta property="og:title" content="{% if page is defined and page.title %}{{ page.title }}{% elif section is defined and section.title %}{{ section.title }}{% else %}witherrors{% endif %}">
   
   {% if page is defined and page %}
-    <meta property="og:description" content="{{ page.description | default(value='A technical blog and grimoire from witherrors.org') }}">
+    <meta property="og:description" content="{{ page.description | default(value=config.description | default(value='A technical blog and grimoire from witherrors.org')) }}">
     <meta property="og:url" content="{{ page.permalink }}">
+    <meta property="article:author" content="{{ page.extra.author | default(value=config.author | default(value='witherrors')) }}">
     {% if page.extra is defined and page.extra.image %}
       <meta property="og:image" content="{{ page.permalink }}{{ page.extra.image }}">
     {% endif %}
   {% elif section is defined and section %}
-    <meta property="og:description" content="{{ section.description | default(value='A technical blog and grimoire from witherrors.org') }}">
+    <meta property="og:description" content="{{ section.description | default(value=config.description | default(value='A technical blog and grimoire from witherrors.org')) }}">
     <meta property="og:url" content="{{ section.permalink }}">
   {% else %}
-    <meta property="og:description" content="A technical blog and grimoire from witherrors.org">
+    <meta property="og:description" content="{{ config.description | default(value='A technical blog and grimoire from witherrors.org') }}">
     <meta property="og:url" content="{{ current_url }}">
   {% endif %}
 
