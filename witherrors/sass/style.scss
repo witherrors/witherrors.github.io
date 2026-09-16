@@ -122,6 +122,24 @@ body::before {
 }
 
 // ---------------------------------------------
+// Page-specific size override — avarice hero only
+// ---------------------------------------------
+// Bumps font-size and offset distances for this one heading.
+// Does not affect .glitch anywhere else.
+
+.glitch--avarice-hero {
+  font-size: 6rem; // adjust to taste
+
+  &::before {
+    transform: translate(-4px, 2px);
+  }
+
+  &::after {
+    transform: translate(4px, -2px);
+  }
+}
+
+// ---------------------------------------------
 // Nav
 // ---------------------------------------------
 
@@ -266,3 +284,4 @@ a {
 .post-title-link {
   font-size: 1.2rem;
 }
+
