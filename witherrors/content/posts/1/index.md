@@ -3,6 +3,7 @@ title = "How To Build A Grimoire in 2026"
 date = 2026-09-16
 [extra]
 image = "wizard.jpeg"
+author = "witherrors"
 +++
 
 # pongus pingus hingus DINGUS

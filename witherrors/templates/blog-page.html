@@ -19,6 +19,8 @@
     {% endif %}
     
     <meta property="og:url" content="{{ current_url }}">
+    <meta property="og:author" content="{{ page.author }}">
+
 </head>
 {{ page.content | safe }}
 {% endblock content %}
