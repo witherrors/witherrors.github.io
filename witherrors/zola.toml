@@ -8,6 +8,7 @@ compile_sass = true
 build_search_index = true
 
 [markdown]
+external_links_target_blank = true
 
 [markdown.highlighting]
 theme = "catppuccin-mocha"
