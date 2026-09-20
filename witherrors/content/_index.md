@@ -8,7 +8,7 @@ I am witherrors and I am building an open source Linux first c2 framework. For t
 
 ## why Linux first? 
 
-Most public c2 tooling is Windows first, has plenty of research, great tooling, and communities are well established. The Windows space to me feels crowded. I think Linux has a good bit of attack surface now — cloud infra, containers, CI/CD — and it's comparatively underserved. I think there is work to be done. 
+Most public c2 tooling is Windows first, has plenty of research, and communities are well established. The Windows space to me feels crowded. I think Linux has a good bit of attack surface now — cloud infra, containers, CI/CD — and it's comparatively underserved. I think there is work to be done. 
 
 ## what I am not and for reference:
 
