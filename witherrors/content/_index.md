@@ -4,7 +4,7 @@ template = "index.html"
 
 # HOME SWEET HOME
 
-I am witherrors and I am building an open source Linux first c2 framework. For the first time. In public. Yikes.
+I am witherrors and I am building a Linux first c2 framework. For the first time. In public. Yikes.
 
 ## why Linux first? 
 
@@ -17,7 +17,7 @@ Most public c2 tooling is Windows first, has plenty of research, and communities
 - No formal cs background (expect sloppyness as we grow)
 
 ## what I'm not doing here:
-- Using AI for development (I do not know enough about c2 design decisions to validate AI input in a quick manner and this is a passion project...no black boxes!)
+- Using AI for development (no black boxes!)
 - Going into evasion (that is <span class="glitch" data-text="MINE">MINE</span>)
 - Taking ourselves too seriously (lets have some fun)
 
